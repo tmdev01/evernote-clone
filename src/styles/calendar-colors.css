@@ -1,0 +1,89 @@
+/* navigation related */
+.react-calendar__navigation button {
+	color: theme(colors[slate].500);
+}
+
+.react-calendar__navigation button:enabled:hover {
+	background-color: theme(colors[slate].300);
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__prev-button:hover,
+.react-calendar__navigation__arrow.react-calendar__navigation__next-button:hover,
+.react-calendar__navigation button:enabled:hover {
+	color: theme(colors[slate].900);
+}
+
+/* current date, not chosen, not hovered */
+.react-calendar .react-calendar__tile--now {
+	border: 3px solid theme(colors[blue].600);
+}
+
+.react-calendar .react-calendar__tile--now,
+.react-calendar .react-calendar__tile--now abbr {
+	color: theme(colors[blue].600);
+}
+
+/* current date, not chosen, HOVERED */
+.react-calendar__tile--now.react-calendar__tile:hover {
+	background-color: theme(colors[blue].600);
+}
+
+.react-calendar__tile--now.react-calendar__tile:hover,
+.react-calendar__tile--now.react-calendar__tile:hover abbr {
+	color: theme(colors[slate].300);
+}
+
+/* current date, CHOSEN, not hovered */
+.react-calendar__tile--now.react-calendar__tile--hasActive,
+.react-calendar__tile--now.react-calendar__tile--active {
+	background-color: theme(colors[blue].600);
+	color: theme(colors[slate].300);
+}
+
+.react-calendar__tile--now.react-calendar__tile--active abbr,
+.react-calendar__tile--now.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__year-view__months__month
+	abbr,
+.react-calendar__tile--now.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__decade-view__years__year,
+.react-calendar__tile--now.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__century-view__decades__decade {
+	color: theme(colors[slate].300);
+}
+
+/* current date, CHOSEN, HOVERED */
+
+/* unchosen different date not hovered */
+.react-calendar__month-view__weekdays__weekday,
+.react-calendar__tile.react-calendar__month-view__days__day,
+.react-calendar__tile.react-calendar__year-view__months__month abbr,
+.react-calendar__tile.react-calendar__decade-view__years__year,
+.react-calendar__tile.react-calendar__century-view__decades__decade {
+	color: theme(colors[slate].500);
+}
+
+/* unchosen different date hovered (while another non-current date is chosen) */
+.react-calendar__tile:hover {
+	background-color: theme(colors[slate].300);
+}
+
+.react-calendar__tile.react-calendar__year-view__months__month:hover abbr,
+.react-calendar__tile:hover {
+	color: theme(colors[slate].900);
+}
+
+/* different date, CHOSEN, not hovered */
+.react-calendar__tile--hasActive,
+.react-calendar__tile--active {
+	background: theme(colors[slate].300);
+	color: theme(colors[slate].900);
+}
+
+.react-calendar__tile--active abbr,
+.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__year-view__months__month abbr,
+.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__decade-view__years__year,
+.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__century-view__decades__decade {
+	color: theme(colors[slate].900);
+}
+
+/* days of neighboring months */
+.react-calendar__tile.react-calendar__month-view__days__day--neighboringMonth {
+	color: theme(colors[slate].800);
+}
